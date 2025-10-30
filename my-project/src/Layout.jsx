@@ -2,7 +2,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 
 function Layout() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)  // 改为 false，默认浅色模式
   const location = useLocation()
   
   // 判断当前路径是否激活
@@ -25,7 +25,7 @@ function Layout() {
                 to="/" 
                 className={`font-medium transition-colors ${
                   isActive('/') 
-                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    ? 'text-indigo-600 dark:text-green-400' 
                     : 'text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
                 }`}
               >

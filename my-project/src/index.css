@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* 配置深色模式 - 使用 class 策略 */
+@variant dark (&:where(.dark, .dark *));
+
 /* 基础样式重置 */
 * {
   margin: 0;
